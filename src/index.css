@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.card-img {
+  object-fit: cover;
+  height: 148px;
+}
+
+.bg-dark.text-white.card {
+  filter: brightness(100%);
+  transition: all 1s ease;
+}
+.bg-dark.text-white.card:hover {
+  filter: brightness(50%);
+}
+
+.navbar-brand img {
+  transform: scale(0.7);
+  height: 6vh;
+}
+
+#navbarScroll {
+  flex-grow: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar-expand-lg {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+#home {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  text-decoration: none;
+  color: grey;
+}
+
+#home:hover {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  background-color: rgb(2, 91, 214);
+  text-decoration: none;
+  color: white;
+}
+
+.bg-dark.text-white.card {
+  width: 350px;
+  height: 150px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.navbar-brand {
+  margin-right: 0;
+  margin-left: 200px;
+}
+
+.board-card {
+  position: relative;
+}
+
+.board-card span {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: aliceblue;
+}
+
+.starred {
+  margin-top: 50px;
+}
+
+.starred,
+.unstarred {
+  display: flex;
+  flex-direction: column;
+}
+
+.all-boards {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.boards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3%;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-left: 30px;
+}
+
+.all-list {
+  padding: 2%;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 91.5vh;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+}
+
+.all-list::-webkit-scrollbar {
+  display: none;
+}
+
+.all-list > .card {
+  margin-left: 50px;
+  display: inline-flex;
+  width: 300px;
+}
+
+.add-list {
+  position: absolute;
+  top: 35px;
+  font-size: 0.6rem;
+}
+
+#list-close {
+  display: flex;
+  justify-content: space-around;
+}
+#add-list {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+#card-info {
+  flex-direction: row;
+}
+
+#card-info > button {
+  align-self: center;
+  border: none;
+  margin-right: 5px;
+  --bs-btn-close-focus-shadow: none;
+}
+
+#card-name-box {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.check-list-heading {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+.check-list-heading > p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.hstack {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.mb-3.form-floating {
+  margin-bottom: 0 !important;
+}
+
+.checkitem {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.checkitem-ele {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-img-overlay {
+  box-shadow: 10px 10px 60px -20px rgba(0, 0, 0, 1);
+}
+
+.all-list > .card {
+  box-shadow: 10px 10px 60px -20px rgba(0, 0, 0, 1);
+}
+
+.btn-close {
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.modal-header {
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.modal-content {
+  background-color: rgb(238, 238, 238);
+}
+
+.all-checklist > .card {
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.checkitem h5 {
+  text-transform: capitalize;
+  margin-top: 5px;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.btn-secondary {
+  background-color: rgb(2, 91, 214);
+}
